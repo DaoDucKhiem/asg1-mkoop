@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dictionary;
+package dictionary.version2;
 
 import java.util.ArrayList;
 
@@ -12,5 +12,5 @@ import java.util.ArrayList;
  * @author DUC KHIEM
  */
 public class Dictionary {
-    ArrayList<Word> dictionary = new ArrayList<Word>();
+    ArrayList<Word> dictionary = new ArrayList<>();
 }
