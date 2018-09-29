@@ -12,5 +12,6 @@ import java.util.ArrayList;
  * @author DUC KHIEM
  */
 public class Dictionary {
+
     ArrayList<Word> dictionary = new ArrayList<>();
 }

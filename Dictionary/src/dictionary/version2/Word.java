@@ -10,9 +10,10 @@ package dictionary.version2;
  * @author DUC KHIEM
  */
 public class Word {
-    private String Word_target; //từ mới
-    
-    private String Word_explain; // từ giải thích
+
+    public String Word_target; //từ mới
+
+    public String Word_explain; // từ giải thích
 
     public String getWord_target() {
         return Word_target;
@@ -28,5 +29,5 @@ public class Word {
 
     public void setWord_explain(String Word_explain) {
         this.Word_explain = Word_explain;
-    }    
+    }
 }

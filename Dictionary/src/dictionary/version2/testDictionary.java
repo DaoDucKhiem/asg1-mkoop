@@ -17,8 +17,14 @@ public class testDictionary {
     public static void main(String[] args) {
         // TODO code application logic here
         DictionaryCommandline dicCom = new DictionaryCommandline();
-       
-        dicCom.dictionaryBasic();
+
+        String fi = "input.txt";
+
+        dicCom.dictionaryBasic(fi);
+
+        dicCom.testReplaceAndDelete(fi);
+
+        dicCom.testInsert(fi);
     }
-    
+
 }

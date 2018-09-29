@@ -1,3 +1,1 @@
-hi	xinchao
-hello	chao ban
-bye	tam biet
+hello	xin chaobye	tam biet
