@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="276.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.replaceWord">
+   <children>
+      <TabPane layoutY="26.0" prefHeight="250.0" prefWidth="555.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Replace Word">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="old_word" layoutX="154.0" layoutY="53.0" prefHeight="25.0" prefWidth="255.0" promptText="Old word" />
+                        <TextField fx:id="new_word" layoutX="154.0" layoutY="111.0" prefHeight="25.0" prefWidth="255.0" promptText="New word" />
+                        <Label layoutX="56.0" layoutY="53.0" text="Old Word" textAlignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="111.0" text="New Word">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="375.0" layoutY="172.0" mnemonicParsing="false" onAction="#apply_replace_word" text="Apply" />
+                        <Button layoutX="455.0" layoutY="172.0" mnemonicParsing="false" onAction="#cancel_replace_word" text="Cancel" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Replace Explain">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="555.0">
+                     <children>
+                        <TextField fx:id="find_word_replace_explain" layoutX="203.0" layoutY="5.0" />
+                        <TextField fx:id="noun_explain" layoutX="97.0" layoutY="39.0" prefHeight="25.0" prefWidth="380.0" promptText="Noun" />
+                        <TextField fx:id="verb_explain" layoutX="97.0" layoutY="78.0" prefHeight="25.0" prefWidth="380.0" promptText="Verb" />
+                        <Button layoutX="383.0" layoutY="195.0" mnemonicParsing="false" onAction="#apply_replace_explain" text="Apply" />
+                        <Button layoutX="466.0" layoutY="195.0" mnemonicParsing="false" onAction="#cancel_replace_explain" text="Cancel" />
+                        <TextField fx:id="adjective_explain" layoutX="98.0" layoutY="115.0" prefHeight="25.0" prefWidth="379.0" promptText="Adjective" />
+                        <Label layoutX="131.0" layoutY="8.0" prefHeight="17.0" prefWidth="35.0" text="Word" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="29.0" layoutY="43.0" text="Noun">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="29.0" layoutY="82.0" text="Verb">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="15.0" layoutY="115.0" text="Adjective">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="26.0" layoutY="153.0" text="Other">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="other_explain" layoutX="98.0" layoutY="153.0" prefHeight="25.0" prefWidth="380.0" promptText="Other" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Text layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Replace" textAlignment="CENTER" wrappingWidth="72.337890625">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

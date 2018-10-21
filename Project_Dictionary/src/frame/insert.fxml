@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.insertWord">
+   <children>
+      <Text layoutX="183.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMATION OF WORD" textAlignment="CENTER" wrappingWidth="233.6015625">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="addWord" layoutX="219.0" layoutY="73.0" />
+      <Label layoutX="163.0" layoutY="73.0" text="Word">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Text layoutX="16.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The meaning of this word includes:" wrappingWidth="374.6171875">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="noun" layoutX="100.0" layoutY="162.0" prefHeight="25.0" prefWidth="451.0" />
+      <TextField fx:id="verb" layoutX="100.0" layoutY="200.0" prefHeight="25.0" prefWidth="451.0" />
+      <TextField fx:id="adjective" layoutX="100.0" layoutY="239.0" prefHeight="25.0" prefWidth="451.0" />
+      <TextField fx:id="other" layoutX="100.0" layoutY="280.0" prefHeight="25.0" prefWidth="451.0" />
+      <Button layoutX="419.0" layoutY="348.0" mnemonicParsing="false" onAction="#Insert" prefHeight="25.0" prefWidth="52.0" text="Insert" />
+      <Button layoutX="487.0" layoutY="348.0" mnemonicParsing="false" onAction="#Cancel" text="Cancel" />
+      <Label layoutX="33.0" layoutY="162.0" prefHeight="25.0" prefWidth="60.0" text="Noun:" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="201.0" prefHeight="25.0" prefWidth="60.0" text="Verb:" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="238.0" prefHeight="26.0" prefWidth="75.0" text="Adjective:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="281.0" prefHeight="23.0" prefWidth="52.0" text="Other:" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

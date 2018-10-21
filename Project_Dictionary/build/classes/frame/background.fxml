@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frame.Controller1">
+   <children>
+      <SplitPane dividerPositions="0.17455138662316477" orientation="VERTICAL" prefHeight="615.0" prefWidth="750.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="181.0" prefWidth="420.0">
+               <children>
+                  <HBox layoutX="7.0" layoutY="2.0" prefHeight="104.0" prefWidth="748.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="104.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logo.png" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="104.0" prefWidth="645.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="  ===  DICTIONARY  ===  " textAlignment="CENTER" wrappingWidth="644.25341796875">
+                                 <font>
+                                    <Font name="Times New Roman Bold Italic" size="55.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="*****" textAlignment="CENTER" wrappingWidth="644.1435546875">
+                                 <font>
+                                    <Font size="37.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TabPane layoutX="-1.0" prefHeight="503.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="OFFLINE">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.059322033898305086" orientation="VERTICAL" prefHeight="474.0" prefWidth="750.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <Button layoutX="66.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="52.0" text="Insert" />
+                                                <Button layoutX="132.0" mnemonicParsing="false" onAction="#Replace" text="Replace" />
+                                                <Button layoutX="207.0" mnemonicParsing="false" onAction="#deleteWord" prefHeight="25.0" prefWidth="56.0" text="Delete" />
+                                                <Button mnemonicParsing="false" onAction="#Close" prefHeight="25.0" prefWidth="52.0" text="Close" />
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <SplitPane dividerPositions="0.23796791443850268" layoutX="-1.0" prefHeight="442.0" prefWidth="750.0">
+                                                  <items>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                         <children>
+                                                            <SplitPane dividerPositions="0.11643835616438356" layoutX="8.0" orientation="VERTICAL" prefHeight="440.0" prefWidth="175.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                              <items>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                                     <children>
+                                                                        <HBox alignment="CENTER_LEFT" layoutX="-13.0" layoutY="-26.0" prefHeight="48.0" prefWidth="173.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                           <children>
+                                                                              <TextField fx:id="word" onAction="#SearchWord" onMouseClicked="#inputWord" prefHeight="37.0" prefWidth="131.0" />
+                                                                              <Button mnemonicParsing="false" onAction="#SearchWord" prefHeight="34.0" prefWidth="42.0">
+                                                                                 <graphic>
+                                                                                    <ImageView fitHeight="27.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                                                                       <image>
+                                                                                          <Image url="@../images/search.png" />
+                                                                                       </image>
+                                                                                    </ImageView>
+                                                                                 </graphic>
+                                                                              </Button>
+                                                                           </children>
+                                                                        </HBox>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                                     <children>
+                                                                        <ListView fx:id="listview" layoutX="9.0" layoutY="8.0" onMouseClicked="#DisplayExplain" prefHeight="366.0" prefWidth="155.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="8.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                              </items>
+                                                            </SplitPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                         <children>
+                                                            <WebView fx:id="webview1" layoutX="121.0" layoutY="104.0" onMouseMoved="#showWordRandom" prefHeight="440.0" prefWidth="567.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                            <Button layoutX="498.0" layoutY="-1.0" mnemonicParsing="false" onAction="#Speak" prefHeight="31.0" prefWidth="46.0">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../images/loa.gif" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                            </Button>
+                                                         </children>
+                                                      </AnchorPane>
+                                                  </items>
+                                                </SplitPane>
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="ONLINE">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.20127118644067796" layoutX="36.0" layoutY="14.0" orientation="VERTICAL" prefHeight="474.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <HBox layoutX="67.0" layoutY="-4.0" prefHeight="92.0" prefWidth="748.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <TextField fx:id="textTranslate" onAction="#translate" prefHeight="92.0" prefWidth="748.0" promptText="translate">
+                                                         <font>
+                                                            <Font name="Times New Roman" size="22.0" />
+                                                         </font></TextField>
+                                                      <VBox prefHeight="92.0" prefWidth="106.0">
+                                                         <children>
+                                                            <Button mnemonicParsing="false" onAction="#translate" prefHeight="49.0" prefWidth="52.0">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../images/search.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                            </Button>
+                                                            <Button mnemonicParsing="false" onAction="#playSound" prefHeight="44.0" prefWidth="52.0">
+                                                               <graphic>
+                                                                  <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../images/loa.gif" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </graphic>
+                                                            </Button>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <WebView fx:id="webview2" layoutX="9.0" layoutY="10.0" prefHeight="355.0" prefWidth="730.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="10.0" />
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>
